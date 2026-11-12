@@ -17,13 +17,14 @@ Preference data is widely used to compare model outputs and build higher-quality
 ## Features
 
 - Validates pairwise preference records before evaluation
-- Supports configurable weighted rubrics
-- Scores response A and response B across multiple dimensions
+- Supports configurable rubric weights and score ranges
+- Computes weighted totals from supplied dimension scores for response A and response B
 - Predicts A / B / tie from rubric-weighted scores
-- Measures agreement with human preference labels
+- Measures agreement between rubric-based predictions and human preference labels
 - Flags missing fields, invalid labels, duplicates, and score-range violations
-- Produces a JSON evaluation report
+- Generates a JSON evaluation report
 - Includes unit tests and GitHub Actions CI
+- Runs locally without external LLM API calls
 
 ## Rubric
 
